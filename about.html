@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <title>Cami</title>
+
+    </head>
+
+    <div class="header-container">
+        <header>
+            <a href="index.html"><img src="images/logo.png" alt="Cami's Logo, click to return to home page"></a>
+            <nav class="header-nav">
+                <ul>
+                    <li class="item1"><a href="about.html">About Me</a></li>
+                    <li class="item2"><a href="work.html">Work</a></li>
+                    <li class="item3"><a href="resume.html">Resume</a></li>
+                    <li class="item4"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 1440 50">
+        <g stroke-width="4.5" stroke="#7A9462" fill="none" stroke-linecap="round">
+        <path d="M0,40C360,40,360,10,720,10C1080,10,1080,40,1440,40" transform="matrix(1,0,0,1,0,0)"></path></g>
+    </svg>
+    
+    <body>
+        <div class="headerabout">
+            <div class="aboutmehead">
+                <h1>About Me</h1>
+            </div>
+
+            <div class="aboutcontent">
+                <img src="images/abstract1-green_2.png">
+            </div>
+        </div>
+        
+        
+            <div id="aboutcontent1-2">
+                <div class="aboutcontent1">
+                    <h3>Majoring in Visual Communication Technology at  <span class="darkgreen">Bowling Green State University </span>has provided me with opportunities to create art in various forms, including photography, graphic design, print, and even a bit of videography.</h3>
+                </div>
+                <div class="aboutcontent2">
+                    <a href="work.html">Work</a>
+                </div>
+            </div>
+        
+
+        <div class="bottom-about">
+            <div class="bottom-text">
+                <p>At the heart of all I do are three things: quality, accessibility, and collaboratin. 
+                    I’m committed to producing high-quality results, creating accessible content, and fostering a collaborative environment. 
+                    These values reflect not only in my work but also in the relationships I build with clients and colleagues.</p>
+            </div>
+        </div>
+
+
+    </body>
+
+    <footer>
+        <div class="foot">
+            <div id="foot-L">
+                <ul>
+                    <li class="big">Cameron Wasiniak</li>
+                    <li class="small">email: <a href= "mailto: camiqw18@gmail.com">camiqw18@gmail.com</a></li>
+                    <li class="small">phone: (419) 602-7382</li>
+                </ul>
+            </div>
+            <div id="foot-R">
+                <ul>
+                    <li><a><img src="images/github.png"></a></li>
+                    <li ><a><img src="images/facebook.png"></a></li>
+                    <li><a><img src="images/instagram.jpg"></a></li>
+                    <li><a><img src="images/linkedin.png"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            var element = document.getElementById('aboutcontent1-2');
+            var position = element.getBoundingClientRect();
+        
+            // checking whether fully visible
+            if(position.top >= 0 && position.bottom <= window.innerHeight) {
+                element.style.opacity = "1";
+                element.style.transform = "translateY(0px)";
+            }
+        });
+    </script>
+    
+</html>
